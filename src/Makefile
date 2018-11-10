@@ -2,8 +2,8 @@ CFLAGS = -g -O2 -Wall -lpthread
 LIB = -lrt
 OBJS = slog.o
 
-LIBINSTALL = /usr/local/lib
-HEADINSTALL = /usr/local/include
+LIBINSTALL = ${HOME}/.local/lib
+HEADINSTALL = ${HOME}/.local/include
 
 .c.o:
 	$(CC) $(CFLAGS) -c $< $(LIB)
